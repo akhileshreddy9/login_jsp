@@ -36,10 +36,10 @@
 		while(rs.next()) {
 %>
 			<tr id="<%=rs.getString(1) %>" class="success">
-				<td contentEditable="true"><%= rs.getString(1) %></td>
+				<td><%= rs.getString(1) %></td>
 				<td><%= rs.getString(2) %></td>
 				<td>
-					<a href = "update.jsp?id=<%=rs.getString(1)  %>"><img src="images/edit.png" /></a>
+					<a href = "update.jsp?id=<%=rs.getString(1)%>?<%=rs.getString(2)%>"><img src="images/edit.png" /></a>
 				</td>
 				<td>
 					<a href="delete.jsp?id=<%=rs.getString(1)%>"><img src="images/delete.png" /></a>

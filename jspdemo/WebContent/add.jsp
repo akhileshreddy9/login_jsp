@@ -61,20 +61,13 @@ catch(Exception e)
 		<tr>
 		<td><input type="text" name="username" /></td>
 		<td><input type="text" name="password" /></td>
-		<td>
-					<a href = "update.jsp"><img src="images/edit.png" /></a>
-				</td>
-				<td>
-					<a href="delete.jsp"><img src="images/delete.png" /></a>
+		<td colspan ="2">
+					<input type="submit"  value="Submit" >
 				</td>
 				
 			
 		</tr>
-		<tr>
-				<td>
-				<input type="submit"  value="Submit" >
-				</td>
-				</tr>
+		
 	
 </table>
 </form>
