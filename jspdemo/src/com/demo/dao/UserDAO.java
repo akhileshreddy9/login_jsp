@@ -53,13 +53,15 @@ public class UserDAO {
 		return x;
 	}
 
-	public int updateUser( String id, String pass ) {
+	public int updateUser( UserBean user  ) {
 		int x = 0;
 		try {
-			String query = "update user set username=?, password=? where username=?";
+			String query = "update user set uname=?, pword=? where uname=?";
 			PreparedStatement preparedStatement = con.prepareStatement( query );
-			preparedStatement.setString( 1, id);
-			preparedStatement.setString( 2, pass );
+			preparedStatement.setString( 1, user.getUsername());
+			preparedStatement.setString( 2, user.getPassword() );
+			preparedStatement.setString( 3, user.getOldUsername() );
+			
 			x = preparedStatement.executeUpdate();
 		
 			preparedStatement.close();

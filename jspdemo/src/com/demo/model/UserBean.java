@@ -11,7 +11,13 @@ public class UserBean {
 	
 	private String username;
 	private String password;
-	
+	private String oldUsername;
+	public String getOldUsername() {
+		return oldUsername;
+	}
+	public void setOldUsername(String oldUsername) {
+		this.oldUsername = oldUsername;
+	}
 	/**
 	 * @return the username
 	 */
